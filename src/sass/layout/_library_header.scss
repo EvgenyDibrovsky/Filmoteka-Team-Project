@@ -1,0 +1,79 @@
+.header-library {
+  padding-top: 46px;
+  padding-bottom: 65px;
+  background-image: url(../images/header-my-library/header-my-library-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .header-library {
+    background-image: url(../images/header-my-library/header-my-library-mobile@2x.jpg);
+  }
+}
+.header-library__navigation {
+  margin-bottom: 49px;
+}
+
+.header-library__btn-list {
+  display: flex;
+  justify-content: center;
+}
+.header-library__btn-item:not(:last-child) {
+  margin-right: 20px;
+}
+.header-library__btn-watched,
+.header-library__btn-queue {
+  width: 130px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  .theme-switcher & {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+.header-library__btn-current {
+  background-color: #ff6b08;
+  border: 1px solid #ff6b08;
+}
+
+@media screen and (min-width: 768px) {
+  .header-library {
+    background-image: url(../images/header-my-library/header-my-library-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-library {
+      background-image: url(../images/header-my-library/header-my-library-tablet@2x.jpg);
+    }
+  }
+
+  .header-library__navigation {
+    margin-bottom: 45px;
+  }
+  .buttons-list__item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .header-library__btn {
+    width: 136px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-library {
+    background-image: url(../images/header-my-library/header-my-library-desktop.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header-library {
+      background-image: url(../images/header-my-library/header-my-library-desktop@2x.jpg);
+    }
+  }
+}
